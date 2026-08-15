@@ -1,7 +1,8 @@
 class Solution {
 public:
     vector<int> getAverages(vector<int>& nums, int k) {
-    int a=nums.size(),i,sum=0;
+    int a=nums.size(),i;
+    unsigned long long sum=0;
     vector<int> v(a,-1);
     if(a<2*k+1)        return v; 
     for(i=0;i<2*k+1;i++)       sum=sum+nums[i];
