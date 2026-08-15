@@ -8,7 +8,7 @@
 Hash Table, Two Pointers, String, Sliding Window
 
 ### 🚀 Performance
-- **Runtime:** 4 ms
+- **Runtime:** 3 ms
 - **Memory:** 10.9 MB
 
 ---
