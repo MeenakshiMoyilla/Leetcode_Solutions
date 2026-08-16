@@ -8,7 +8,7 @@ public:
         }        
         else
         {
-            int i,j;
+            int i,j,count=0;
             int a=nums1.size();
             // cout<<nums1.size()<<endl;
             for(i=0;i<a;i++)
@@ -18,6 +18,8 @@ public:
                 if(nums1[i]==0)
                 {
                     nums1.erase(nums1.begin()+i);
+                    count++;
+                    if(count==n)    break;
                 }
                 // for(j=0;j<nums1.size();j++)
                 // {
