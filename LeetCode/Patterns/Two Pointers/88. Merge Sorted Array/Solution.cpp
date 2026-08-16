@@ -8,25 +8,20 @@ public:
         }        
         else
         {
-            int i,j,count=0;
-            int a=nums1.size();
-            // cout<<nums1.size()<<endl;
-            for(i=0;i<a;i++)
+            int i,j;
+            for(i=0;i<=nums1.size();i++)
             {
-                // cout<<i<<"  ";
-                // cout<<endl<<nums1[i]<<endl;
+                cout<<endl<<nums1[i]<<endl;
                 if(nums1[i]==0)
                 {
                     nums1.erase(nums1.begin()+i);
-                    count++;
-                    if(count==n)    break;
                 }
-                // for(j=0;j<nums1.size();j++)
-                // {
-                //     cout<<nums1[j]<<"  ";
-                // }
+                for(j=0;j<nums1.size();j++)
+                {
+                    cout<<nums1[j]<<"  ";
+                }
             }
-            // cout<<endl;
+            cout<<endl;
             for(i=0;i<nums2.size();i++)
             {
                 nums1.push_back(nums2[i]);
