@@ -14,8 +14,13 @@ public:
         {
             int need=pre[i]%k;
             auto it=mp.find(need);
-            if(it!=mp.end())    return true;
-            mp[need%k]++;
+            if(!(pre[i-1]==need)){
+            if(it!=mp.end())
+            {
+                return true;
+            }
+            }
+            mp[need]++;
         }
         // cout<<0%k;
         return false;
