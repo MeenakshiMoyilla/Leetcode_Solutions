@@ -13,8 +13,20 @@ public:
         for(i=1;i<pre.size();i++)
         {
             int need=pre[i]%k;
+            int low=0,high=pre.size()-1,idx=0;
+            while(low<=high)
+            {
+                int mid=low+(high-low)/2;
+                if(pre[mid]==need) 
+                {
+                    int idx=mid;
+                    high=mid-1;
+                }
+                else if(pre[mid]<need)  low=mid+1;
+                else                    high=mid-1;
+            }
             auto it=mp.find(need);
-            if(!(pre[i-1]==need)){
+            if(idx!=i-1){
             if(it!=mp.end())
             {
                 return true;
