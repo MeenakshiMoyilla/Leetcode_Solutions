@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 10 / 100 (10.0%)
+- **Completed:** 11 / 100 (11.0%)
 
 ---
 
@@ -19,7 +19,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Next Permutation
 - [ ] Trapping Rain Water
 - [ ] Find the Duplicate Number
-- [ ] Majority Element
+- [x] [Majority Element](./C++/Easy/169. Majority Element/)
 - [x] [Find All Numbers Disappeared in an Array](./C++/Easy/448. Find All Numbers Disappeared in an Array/)
 
 ### 📂 Subarray & Sliding Window
