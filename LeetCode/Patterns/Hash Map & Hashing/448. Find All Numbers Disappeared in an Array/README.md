@@ -1,6 +1,6 @@
 # 📝 448. Find All Numbers Disappeared in an Array (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Hash Table
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 43 ms
+- **Memory:** 64.3 MB
 
 ---
 
