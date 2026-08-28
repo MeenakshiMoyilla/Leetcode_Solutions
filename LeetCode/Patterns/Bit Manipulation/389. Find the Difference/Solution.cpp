@@ -1,16 +1,19 @@
 class Solution {
 public:
-    char findTheDifference(string s, string t)
-    {
-        // char a='a';
-        int len=s.size(),i;
-        for(i=0;i<len;i++)
+    char findTheDifference(string s, string t){
+        int i;
+        unordered_map<char,int> mp;
+        unordered_map<char,int> mp1;
+        for(i=0;i<s.size();i++)
         {
-            int x=t.find(s[i]);
-            t.erase(t.begin()+x);
+            mp[s[i]]++;
+            mp1[t[i]]++;
         }
-        // cout<<t;
-        // char a=t[0];
-        return t[0];
+        mp1[t[t.size()-1]]++;
+        for(auto x: mp1)
+        {
+            if(mp.find(x.first)==mp.end())  return x.first;
+        }
+        return 'a';
     }
 };
