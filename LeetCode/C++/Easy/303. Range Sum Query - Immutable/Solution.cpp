@@ -3,7 +3,6 @@ public:
     vector<int> prefix;
     NumArray(vector<int>& nums) {
         prefix.resize(nums.size());
-        // vector<int> prefix(nums.size());
         prefix[0]=nums[0];
         for(int i=1;i<nums.size();i++)
         {
