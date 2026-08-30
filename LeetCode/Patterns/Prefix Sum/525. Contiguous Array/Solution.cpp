@@ -20,7 +20,7 @@ public:
             {
                 // cout<<prefix[i]<<" ";
                 auto it=find(prefix.begin(),prefix.begin()+i,prefix[i]);
-                cout<<prefix[i]<<" "<<*it<<endl;
+                // cout<<prefix[i]<<" "<<*it<<endl;
                 int idx=it-prefix.begin();
                 current= i - idx;
 
