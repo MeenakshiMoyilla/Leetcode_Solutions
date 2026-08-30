@@ -12,27 +12,20 @@ public:
         {
             prefix[i+1]=prefix[i]+nums[i];
         }
-        mp[0]++;
-        for(i=1;i<n+1;i++)
-        {
+        mp[0]=0;
+        for(i=1;i<n+1;i++){
             
             if(mp.find(prefix[i])!=mp.end())
             {
-                // cout<<prefix[i]<<" ";
-                auto it=find(prefix.begin(),prefix.begin()+i,prefix[i]);
-                // cout<<prefix[i]<<" "<<*it<<endl;
-                int idx=it-prefix.begin();
-                current= i - idx;
+                // auto it=find(prefix.begin(),prefix.begin()+i,prefix[i]);
+                // int idx=it-prefix.begin();
+                current= i - mp[prefix[i]];
 
                 maxi=max(current,maxi);
-                // cout<<" c: "<<current<<" m : "<<maxi<<endl;
             }
-            mp[prefix[i]]++;
-            // cout<<prefix[i]<<"  ";
+            else
+            mp[prefix[i]]=i;
         }
-        // cout<<endl;
-        // for(auto x: mp)
-        // cout<<x.first<<"  "<<x.second<<endl;
 
         return maxi;
     }
