@@ -12,6 +12,6 @@ public:
             if(nums[i]!=nums[i+1])  return nums[i];
             else                    i++;
         }
-        return -1;
+        return nums[0];
     }
 };
