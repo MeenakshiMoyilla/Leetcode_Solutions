@@ -31,7 +31,7 @@ public:
             d=1;
             }
             k--;
-            if(d==1){
+            if(d==1 && k>l){
             for(x=k-1;x>=i;x--)
             {
                 res.push_back(matrix[x][l]);
