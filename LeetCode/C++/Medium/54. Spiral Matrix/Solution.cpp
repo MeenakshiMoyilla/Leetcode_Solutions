@@ -6,41 +6,41 @@ public:
         int a=1,b=0,c=0,d=0;
         while(i<k && l<j)
         {
-            // cout<<"hello";
-            if(a==1){
-            for(x=l;x<j;x++)
+            if(a==1)
             {
-                res.push_back(matrix[i][x]);
+                for(x=l;x<j;x++)
+                {
+                    res.push_back(matrix[i][x]);
+                    b++;
+                }
             }
-            b=1;
-            }
-            i++; //i=1 
-            if(b==1){
-            for(x=i;x<k;x++)
+            i++;  
+            if(b>0)
             {
-                res.push_back(matrix[x][j-1]);
-            }
-            c=1;
+                for(x=i;x<k;x++)
+                {
+                    res.push_back(matrix[x][j-1]);
+                    c++;
+                }
             }
             j--;
-            if(c==1 && j>i){
-            for(x=j-1;x>=l;x--)
+            if(c>0)
             {
-                res.push_back(matrix[k-1][x]);
-            }
-            d=1;
+                for(x=j-1;x>=l;x--)
+                {
+                    res.push_back(matrix[k-1][x]);
+                    d++;
+                }
             }
             k--;
-            if(d==1 && k>l){
-            for(x=k-1;x>=i;x--)
+            if(d>0)
             {
-                res.push_back(matrix[x][l]);
+                for(x=k-1;x>=i;x--)
+                {
+                    res.push_back(matrix[x][l]);
+                }
+                a=1,b=0,c=0,d=0;
             }
-            a=1,b=0,c=0,d=0;
-            }
-            // i++;
-            // j--;
-            // k--;
             l++;
         }
         return res;
