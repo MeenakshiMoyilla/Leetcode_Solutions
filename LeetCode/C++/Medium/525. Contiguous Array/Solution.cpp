@@ -13,6 +13,7 @@ public:
 
         for(i=0;i<n;i++)        prefix[i+1]=prefix[i]+nums[i];
 
+        // storing the index rather than frequency.
         mp[0]=0;
 
         for(i=1;i<n+1;i++){
