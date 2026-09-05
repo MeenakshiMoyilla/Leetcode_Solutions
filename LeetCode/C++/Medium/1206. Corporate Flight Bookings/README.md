@@ -8,8 +8,8 @@
 Array, Prefix Sum
 
 ### 🚀 Performance
-- **Runtime:** 2469 ms
-- **Memory:** 72.2 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 

@@ -1,15 +1,22 @@
 class Solution {
 public:
     vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
-        vector<int> v(n,0);
-        int i,j,s=bookings.size();
-        for(i=0;i<s;i++)
-        {
-            for(j=bookings[i][0];j<=bookings[i][1];j++)
-            {
-                v[j-1]+=bookings[i][2];
-            }
+        int a=bookings.size(),i;
+        vector<int> diff(n+1);
+        vector<int> prefix(n);
+    
+        for(i=0;i<a;i++){
+            int left=bookings[i][0];
+            int right=bookings[i][1];
+            int value=bookings[i][2];
+            diff[left-1]+=value;
+            diff[right]-=value;
         }
-        return v;
+
+        prefix[0]=diff[0];
+        for(i=0;i<n-1;i++)
+            prefix[i+1]=prefix[i]+diff[i+1];
+
+        return prefix;
     }
 };
