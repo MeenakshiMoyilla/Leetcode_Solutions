@@ -6,7 +6,6 @@ public:
         vector<int> prefix(s.size());
         string res;
         int i=0;
-        // cout<<s.size();
         for(i=0;i<s.size();i++){
             v[i]=s[i];
         }
@@ -15,46 +14,36 @@ public:
             int left=shifts[i][0];
             int right=shifts[i][1];
             int direc=shifts[i][2];
-            if(direc==1)
-            {
+            if(direc==1){
                 diff[left]+=1;
                 diff[right+1]-=1;
                 
             }
-            else
-            {
+            else{
                 diff[left]-=1;
                 diff[right+1]+=1;
             }
         }
         prefix[0]=diff[0];
         v[0]=v[0]+prefix[0];
-        for(i=1;i<s.size();i++)
-        {
+        for(i=1;i<s.size();i++){
             prefix[i]=prefix[i-1]+diff[i];
             v[i]=v[i]+prefix[i];
         }
         for(i=0;i<s.size();i++)
         {
-            if(v[i]>=97 && v[i]<=122)            res+=v[i];
-            else if(v[i]>122)
-            {
+            if(v[i]>122){
                 int x=v[i]%122;
                 v[i]=96+x;
-                res+=v[i];
             }
-            // else
-            // {
-
-            // }
+            else if(v[i]<97)
+            {
+                int x=97-v[i];
+                v[i]=123-x;
+            }
+            res+=v[i];
         }
-        for(i=0;i<diff.size();i++)
-        cout<<diff[i]<<" ";
 
-        // v.clear();
-        
-        // for(i=0;i<s.size();i++)
-        // cout<<v[i]<<" ";
         return res;
     }
 };
