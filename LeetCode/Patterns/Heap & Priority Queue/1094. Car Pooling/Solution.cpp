@@ -2,7 +2,7 @@ class Solution {
 public:
     bool carPooling(vector<vector<int>>& trips, int capacity) {
 
-        int i,maxi=0;
+        int i,maxi=trips[0][2];
 
         for(i=1;i<trips.size();i++)
         {
