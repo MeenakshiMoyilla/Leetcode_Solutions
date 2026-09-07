@@ -16,7 +16,7 @@ public:
             if(t[i]=='#')
             st2.pop();
             else
-            st2.push(s[i]);
+            st2.push(t[i]);
         }
         return st1==st2;
     }
