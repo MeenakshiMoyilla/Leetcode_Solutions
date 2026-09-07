@@ -6,14 +6,14 @@ public:
         int i;
         for(i=0;i<s.size();i++)
         {
-            if(s[i]=='#')
+            if(s[i]=='#' && !(st1.empty()))
             st1.pop();
             else
             st1.push(s[i]);
         }
         for(i=0;i<t.size();i++)
         {
-            if(t[i]=='#')
+            if(t[i]=='#' && !(st2.empty()))
             st2.pop();
             else
             st2.push(t[i]);
