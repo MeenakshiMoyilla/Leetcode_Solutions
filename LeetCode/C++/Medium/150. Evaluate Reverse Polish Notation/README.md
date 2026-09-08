@@ -1,6 +1,6 @@
 # 📝 150. Evaluate Reverse Polish Notation (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Math, Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 17.1 MB
 
 ---
 
