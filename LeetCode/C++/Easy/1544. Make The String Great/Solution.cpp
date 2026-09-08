@@ -11,9 +11,7 @@ public:
         string res;
         st.push(s[s.size()-1]);
         int i;
-        for(i=s.size()-2;i>=0;i--)
-        {
-            // cout<<lowerUppercase(s[i])<<" ";
+        for(i=s.size()-2;i>=0;i--){
             char c=lowerUppercase(s[i]);
             if(!(st.empty())  && c==st.top() ) 
             {
