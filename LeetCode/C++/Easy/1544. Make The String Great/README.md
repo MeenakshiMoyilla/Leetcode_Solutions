@@ -1,6 +1,6 @@
 # 📝 1544. Make The String Great (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/make-the-string-great)
+🔗 [Problem Link](https://leetcode.com/problems/make-the-string-great/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
