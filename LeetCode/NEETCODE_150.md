@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 13 / 150 (8.7%)
+- **Completed:** 14 / 150 (9.3%)
 
 ---
 
@@ -22,7 +22,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 
 ### 📂 Two Pointers
 - [x] [Valid Palindrome](./C++/Easy/125. Valid Palindrome/)
-- [ ] Two Sum II - Input Array Is Sorted
+- [x] [Two Sum II - Input Array Is Sorted](./C++/Medium/167. Two Sum II - Input Array Is Sorted/)
 - [ ] 3Sum
 - [x] [Container With Most Water](./C++/Medium/11. Container With Most Water/)
 - [ ] Trapping Rain Water
