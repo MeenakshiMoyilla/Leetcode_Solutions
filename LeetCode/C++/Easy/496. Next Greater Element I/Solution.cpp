@@ -7,8 +7,8 @@ public:
         vector<int> nge(n,-1);
         stack<int> st;
         st.push(nums2[n-1]);
-        for(i=n-2;i>=0;i--)
-        {
+
+        for(i=n-2;i>=0;i--){
             f=0;
             if(!st.empty() && nums2[i]<st.top()){
                 nge[i]=st.top();
@@ -28,14 +28,11 @@ public:
             }
         }
         for(i=0;i<n;i++)
-        {
-            // cout<<v[i]<<"  ";
             mp[nums2[i]]=nge[i];
-        }
+    
         for(i=0;i<m;i++)
-        {
             ans[i]=mp[nums1[i]];
-        }
+        
         return ans;
     }
 };
