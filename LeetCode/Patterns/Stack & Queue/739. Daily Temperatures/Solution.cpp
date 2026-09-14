@@ -31,8 +31,7 @@ public:
             st.push(temperatures[i]);
             idx.push(i);
         }
-        for(i=0;i<n;i++)
-        {
+        for(i=0;i<n;i++){
             if(ans[i]!=0)
             ans[i]=ans[i]-i;
         }
