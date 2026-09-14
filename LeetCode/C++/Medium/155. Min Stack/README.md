@@ -1,6 +1,6 @@
 # 📝 155. Min Stack (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/min-stack/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/min-stack/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Stack, Design
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 45 ms
+- **Memory:** 151.4 MB
 
 ---
 
