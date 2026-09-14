@@ -1,6 +1,6 @@
 # 📝 739. Daily Temperatures (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/daily-temperatures/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/daily-temperatures/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Stack, Monotonic Stack
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 28 ms
+- **Memory:** 106.7 MB
 
 ---
 
