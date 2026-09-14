@@ -3,13 +3,12 @@ public:
     stack<int> st;
     stack<int> minst;
     MinStack() {
-        // this.val=val;
         
     }
     
     void push(int val) {
         st.push(val);
-        if(minst.empty() || st.top()<minst.top())
+        if(minst.empty() || val<=minst.top())
         minst.push(val);
     }
     
