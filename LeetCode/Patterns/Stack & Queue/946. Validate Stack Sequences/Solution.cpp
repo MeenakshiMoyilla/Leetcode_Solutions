@@ -20,17 +20,12 @@ public:
         // cout<<popped[j]<<" "<<st.top();
         for(i=j;i<popped.size();i++)
         {
-            // cout<<i<<" "<< popped[];
             if(!st.empty() && st.top()==popped[i])
             {
                 st.pop();                
             }
         }
-        // while(!st.empty())
-        // {
-        //     cout<<st.top();
-        //     st.pop();
-        // }
+        
         return st.empty();
     }
 };
