@@ -11,10 +11,10 @@ public:
                 j++;
             }
         }
-        for(i=j;i<popped.size();i++){
-            if(!st.empty() && st.top()==popped[i])
-                st.pop();                
-        }
+        // for(i=j;i<popped.size();i++){
+        //     if(!st.empty() && st.top()==popped[i])
+        //         st.pop();                
+        // }
         
         return st.empty();
     }
