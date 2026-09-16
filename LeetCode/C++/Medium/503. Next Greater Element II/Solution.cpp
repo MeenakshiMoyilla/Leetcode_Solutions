@@ -2,16 +2,22 @@ class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
         int i,n=nums.size();
-        nums.resize(2*n);
-        for(i=0;i<n;i++)
+        if(n==1)
         {
-            nums[n+i]=nums[i];
+            vector<int> v(n,-1);
+            return v;
         }
+        nums.resize(2*n);
         stack<int> st;
         int m=nums.size();
         vector<int> ans(m,-1);
         st.push(nums[m-1]);
-        
+
+        for(i=0;i<n;i++)           nums[n+i]=nums[i];
+        // for(i=0;i<m;i++)
+        // {
+        //     cout<<ans[i]<<"  ";
+        // }
         for(i=m-2;i>=0;i--)
         {
             if(!st.empty() && st.top()>nums[i])
