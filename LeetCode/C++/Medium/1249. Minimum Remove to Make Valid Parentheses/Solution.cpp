@@ -3,35 +3,23 @@ public:
     string minRemoveToMakeValid(string s) {
         stack<char> st;
         int i,open=0,close=0;
-        // stack<char> st2;
-        for(i=0;i<s.size();i++)
-        {
-            if(s[i]==')')
-            {
-                if(!st.empty())
-                {
-                    st.pop();
-                }
-                else
-                {
-                    close++;
-                }
+
+        for(i=0;i<s.size();i++){
+            if(s[i]==')'){
+                if(!st.empty())    st.pop();
+                else                close++;
             }
-            else if(s[i]=='(')
-            {
-                st.push(')');
-            }
+            else if(s[i]=='(')         st.push(')');
         }
+
         open=st.size();
-        for(i=0;i<s.size();)
-        {
-            if(s[i]=='(' && open>0)
-            {
+        
+        for(i=0;i<s.size();){
+            if(s[i]=='(' && open>0){
                 s.erase(s.begin()+i);
                 open--;
             }
-            else if(s[i]==')' && close>0)
-            {
+            else if(s[i]==')' && close>0){
                 s.erase(s.begin()+i);
                 close--;
             }
