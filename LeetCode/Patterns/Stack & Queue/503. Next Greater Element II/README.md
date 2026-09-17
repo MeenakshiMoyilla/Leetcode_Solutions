@@ -1,6 +1,6 @@
 # 📝 503. Next Greater Element II (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/next-greater-element-ii/)
+🔗 [Problem Link](https://leetcode.com/problems/next-greater-element-ii/?utm_source=chatgpt.com)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
