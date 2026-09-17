@@ -2,45 +2,40 @@ class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
         int i,n=nums.size();
-        if(n==1)
-        {
-            vector<int> v(n,-1);
-            return v;
-        }
-        nums.resize(2*n);
+        vector<int> v(2*n);
+        vector<int> ans(2*n,-1);
         stack<int> st;
-        int m=nums.size();
-        vector<int> ans(m,-1);
-        st.push(nums[m-1]);
-
-        for(i=0;i<n;i++)           nums[n+i]=nums[i];
-
-        for(i=m-2;i>=0;i--)
+        for(i=0;i<2*n;i++)
         {
-            cout<<st.top()<<"  ";
-            if(!st.empty() && st.top()>nums[i])
+            v[i]=nums[i%n];
+        }
+        st.push(v[2*n-1]);
+        for(i=2*n-2;i>=0;i--)
+        {
+            if(!st.empty() && st.top()>v[i])
             {
                 ans[i]=st.top();
-                st.push(nums[i]);
+                st.push(v[i]);
             }
             else
             {
                 int f=0;
                 while(!st.empty() && f==0)
                 {
-                    if(st.top()>nums[i])
+                    if(st.top()>v[i])
                     {
                         ans[i]=st.top();
                         f++;
                     }
                     else
-                    st.pop();
+                    {
+                        st.pop();
+                    }
                 }
-                st.push(nums[i]);
+                st.push(v[i]);
             }
         }
-        vector<int> ans2(ans.begin(),ans.begin()+n);
-
-        return ans2;
+        ans.resize(n);
+        return ans;
     }
 };
