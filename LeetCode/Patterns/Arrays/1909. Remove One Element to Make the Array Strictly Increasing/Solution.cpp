@@ -9,7 +9,6 @@ public:
         {
             while(!st.empty() && nums[i]<=st.top())
             {
-                // cout<<nums[i]<<" "<<st.top();
                 st.pop();
                 a++;
                 if(a>1) return false;
