@@ -1,0 +1,7 @@
+/* Write your PL/SQL query statement below */
+SELECT e.name as name ,b.bonus as bonus from 
+Employee e
+left join
+Bonus b
+ON e.empid=b.empid
+where b.bonus is null or b.bonus <1000;
