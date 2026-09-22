@@ -4,6 +4,7 @@ public:
         int min=INT_MAX,cnt=0,sum=0,k,i,n=nums.size();
         for(k=l;k<=r;k++)
         {
+            sum=0;
             for(i=0;i<k;i++)
             {
                 sum=sum+nums[i];
@@ -12,17 +13,16 @@ public:
                 cnt++;
                 min=sum;
             }
-            cout<<sum<<" ";
             for(i=k;i<n;i++)
             {
                 sum=sum+nums[i];
-                sum=sum+nums[i-k];
+                sum=sum-nums[i-k];
                 if(sum>0 && sum<min)
                 {
                     cnt++;
                     min=sum;
                 }
-                cout<<sum<<" ";
+                // cout<<min<<" ";
             }
 
         }
