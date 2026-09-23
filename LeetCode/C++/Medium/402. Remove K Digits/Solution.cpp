@@ -33,7 +33,7 @@ public:
         reverse(s.begin(),s.end());
         i=0;
         if(s.size()>1){
-        for(i=0;i<s.size();)
+        for(i=0;i<s.size()-1;)
         {
             if(s[i]-'0'==0)
             {
