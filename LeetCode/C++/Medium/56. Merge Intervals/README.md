@@ -1,6 +1,6 @@
 # 📝 56. Merge Intervals (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/merge-intervals/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/merge-intervals/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Sorting, Quicksort
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 2 ms
+- **Memory:** 24.1 MB
 
 ---
 
