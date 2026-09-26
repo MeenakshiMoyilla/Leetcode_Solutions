@@ -1,7 +1,7 @@
 class Solution {
 public:
     int countStudents(vector<int>& students, vector<int>& sandwiches) {
-        int i,frnt=0,a;
+        int i,frnt=0,a=0;
         queue<int> stu;
         for(i=0;i<students.size();i++)
         {
