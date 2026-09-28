@@ -1,16 +1,42 @@
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        int i,j,n=nums.size(),maxi=0;
+        deque<int> dq;
         vector<int> v;
-        for(i=0;i<n-k+1;i++)
+        int i,n=nums.size();
+        for(i=0;i<k;i++)
         {
-            maxi=INT_MIN;
-            for(j=i;j<i+k;j++)
-            {
-                maxi=max(maxi,nums[j]);
-            }
-            v.push_back(maxi);
+            // if(dq.front()==)
+            // if(!dq.empty())
+            // {
+                while(!dq.empty() && nums[dq.back()]<nums[i])
+                dq.pop_back();
+                // if(!dq.empty() && nums[dq.back()]>nums[i])
+                dq.push_back(i);
+            // }
+            // if(dq.empty())
+            // {
+            //     dq.push_back(i);
+            // }
+            // v.push_back(nums[dq.front()]);
+        }
+        v.push_back(nums[dq.front()]);
+        for(i=k;i<n;i++)
+        {
+            // cout<<i-k<<"   ";
+            if(!dq.empty() && dq.front()==i-k)      dq.pop_front();
+            // if(!dq.empty())
+            // {
+                while(!dq.empty() && nums[dq.back()]<nums[i])
+                dq.pop_back();
+                // if(!dq.empty() && nums[dq.back()]>nums[i])
+                dq.push_back(i);
+            // }
+            // else
+            // {
+                // dq.push_back(i);
+            // }
+            v.push_back(nums[dq.front()]);
         }
         return v;
     }
