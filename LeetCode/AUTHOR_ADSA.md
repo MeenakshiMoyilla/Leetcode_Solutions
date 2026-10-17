@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 4 / 65 (6.2%)
+- **Completed:** 5 / 65 (7.7%)
 
 ---
 
@@ -14,7 +14,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Merge Two Sorted Lists
 - [ ] Remove Linked List Elements
 - [x] [Reverse Linked List](./C++/Easy/206. Reverse Linked List/)
-- [ ] Delete Node in a Linked List
+- [x] [Delete Node in a Linked List](./C++/Medium/237. Delete Node in a Linked List/)
 - [x] [Middle of the Linked List](./C++/Easy/908. Middle of the Linked List/)
 - [x] [Convert Binary Number in a Linked List to Integer](./C++/Easy/1411. Convert Binary Number in a Linked List to Integer/)
 
