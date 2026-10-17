@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs Advanced DSA interview preparation list.
 
 ## Progress
-- **Completed:** 2 / 65 (3.1%)
+- **Completed:** 3 / 65 (4.6%)
 
 ---
 
@@ -16,7 +16,7 @@ Track your progress on the Curated 100hrs Advanced DSA interview preparation lis
 - [ ] Reverse Linked List
 - [ ] Delete Node in a Linked List
 - [x] [Middle of the Linked List](./C++/Easy/908. Middle of the Linked List/)
-- [ ] Convert Binary Number in a Linked List to Integer
+- [x] [Convert Binary Number in a Linked List to Integer](./C++/Easy/1290. Convert Binary Number in a Linked List to Integer/)
 
 ### 📂 Module  1.2: Insertion, Deletion & Posit
 - [ ] Remove Nth Node From End of List
