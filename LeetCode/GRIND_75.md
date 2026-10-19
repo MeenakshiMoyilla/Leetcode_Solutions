@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 20 / 75 (26.7%)
+- **Completed:** 21 / 75 (28.0%)
 
 ---
 
@@ -60,7 +60,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 
 ### 📂 Linked List
 - [x] [Reverse Linked List](./C++/Easy/206. Reverse Linked List/)
-- [ ] Linked List Cycle
+- [x] [Linked List Cycle](./C++/Easy/141. Linked List Cycle/)
 - [ ] Merge Two Sorted Lists
 - [ ] Merge k Sorted Lists
 - [ ] Remove Nth Node From End of List
