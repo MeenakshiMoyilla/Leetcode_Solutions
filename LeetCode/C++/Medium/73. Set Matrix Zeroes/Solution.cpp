@@ -1,44 +1,30 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        int i,j,m=matrix.size(),n=matrix[i].size(),rowZeroes=0,colZeroes=0;
-        int a=0;
-    
-        for(i=0;i<m;i++){
-            for(j=0;j<n;j++){
-                if(matrix[i][j]==0 && i==0 && j==0) a++;
+        unordered_set<int> rows;
+        unordered_set<int> col;
+        int i,j;
+        for(i=0;i<matrix.size();i++)
+        {
+            for(j=0;j<matrix[0].size();j++)
+            {
                 if(matrix[i][j]==0)
                 {
-                    matrix[i][0]=0;
-                    matrix[0][j]=0;
+                    rows.insert(i);
+                    col.insert(j);
                 }
             }
-        }   
-        for(i=1;i<m;i++)
+        }
+        for(int x:rows)
         {
-            if(matrix[i][0]==0)
+            for(j=0;j<matrix[0].size();j++)
             {
-                colZeroes++;
-                for(j=1;j<n;j++)
-                matrix[i][j]=0;
+                matrix[x][j]=0;
             }
         }
-        for(j=1;j<n;j++)
+        for(i=0;i<matrix.size();i++)
         {
-            if(matrix[0][j]==0)
-            {
-                rowZeroes++;
-                for(i=1;i<m;i++)
-                matrix[i][j]=0;
-            }
-        }
-        if((colZeroes>0 && matrix[0][0]==0) || a>0)
-        {
-            for(i=1;i<m;i++)    matrix[i][0]=0;
-        }
-        if((rowZeroes>0 && matrix[0][0]==0) || a>0)
-        {
-            for(j=1;j<n;j++)    matrix[0][j]=0;
+            for(int x: col)     matrix[i][x]=0;
         }
     }
 };
