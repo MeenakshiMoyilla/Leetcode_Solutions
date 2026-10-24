@@ -1,6 +1,7 @@
 class Solution {
 public:
     string removeKdigits(string num, int k) {
+        if(k>=num.size())   return "0";
         string s;
         stack<int> st;
         int i,cnt=0;
